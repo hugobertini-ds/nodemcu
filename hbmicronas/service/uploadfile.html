@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+upload file to NodeMCU
+</head>
+<body>
+
+	<p><a href="/">home</a> | <a href="/uploadfile">upload file</a> | <a href="/downloadfile">download file</a> | <a href="/show_storage">storage details</a></p>
+
+	<form action="/uploadfile" enctype="multipart/form-data" method="post">
+		<label class="custom-uploader" for="file">Upload Your File</label> 
+		<input id="file" accept=".txt,image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="fileToUpload" type="file" />
+		<button class="btn btn-success" name="submit" type="submit"> Upload File </button>
+	</form>
+
+</body>
+</html>
