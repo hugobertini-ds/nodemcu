@@ -14,6 +14,7 @@ def get_file(request):
 def post_file(request):
     #force files to be available at stream
     request.max_body_length = 0
+    
     # process file upload
     print('Processing file upload...')
     r = f"""
@@ -23,7 +24,7 @@ def post_file(request):
     ... args:          {request.args}<br>
     ... headers:       {request.headers}<br>
     ... cookies:       {request.cookies}<br>
-    ... content_type:  {request.content_type}<br>
+    ... content_type:  {request.cpontent_type}<br>
     ... content_length:{request.content_length}<br>
     ... client_addr:   {request.client_addr}<br>
     ... form name:     {request.form}<br>
